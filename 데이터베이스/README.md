@@ -28,11 +28,13 @@ Clustered Index
 Non-Clustered Index
 데이터의 주소를 저장 - ex) 책의 색인
 
+B+ Tree, Hash
+
 6. 질의 처리
 
 Nested Loop Join - 이중 for문처럼 동작, 내부 테이블이 조인 컬럼에 대해 인덱스를 가지고 있으면 성능 향상 가능
 
-Sort Merge Join - 조인하려는 두 테이블 모두 조인 컬럼에 대해 정렬한 후 합병 정렬처럼 동
+Sort Merge Join - 조인하려는 두 테이블 모두 조인 컬럼에 대해 정렬한 후 합병 정렬처럼 동작
 
 Hash Join - 한 테이블에 대해 해시 테이블을 생성한 후 다른 테이블을 스캔하면서 확인하는 방식으로 동작, 해시 테이블의 크기가 커서 디스크 영역을 사용해야 한다면 성능 감소, Equi Join만 가능
 
